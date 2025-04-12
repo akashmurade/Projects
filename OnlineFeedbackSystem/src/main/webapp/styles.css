@@ -1,0 +1,283 @@
+/* Import Maven Pro Locally */
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('fonts/maven.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+/* Buttons (Both Links & Form Submit Buttons) */
+.btn, 
+input[type="submit"] {
+    width: 100%;  /* Ensures all buttons are the same width */
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: block;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Admin Button */
+.admin-btn {
+    background: #6c757d;
+    box-shadow: 0 3px 10px rgba(108, 117, 125, 0.2);
+}
+
+/* Input Fields */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* Back to Home Link */
+.back-link {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 0;
+}
+
+.back-link a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+    color: #0056b3;
+}
+
+/* Hover Effects */
+.btn:hover, 
+input[type="submit"]:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .btn, 
+    input[type="submit"] {
+        font-size: 15px;
+    }
+
+    .back-link {
+        margin-top: 20px;
+    }
+
+    .back-link a {
+        font-size: 14px;
+    }
+}
+
+/* Full Page Layout for Manage Questions */
+.full-width-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Styled Table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Inline Form Buttons */
+.inline-form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Manage Questions Specific Styles */
+.manage-questions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.manage-questions-container h1 {
+    text-align: center;
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.question-form input,
+.question-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.question-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.question-actions .btn {
+    flex: 1;
+}
+
+/* View Results Page */
+.results-container {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.results-table th {
+    background-color: #28a745;
+    color: white;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.results-container h3 {
+	margin-top: 1.5rem;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logout-btn {
+	
+}
